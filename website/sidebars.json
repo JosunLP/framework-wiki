@@ -9,7 +9,8 @@
       "configGuide",
       "classGuide",
       "pageGuide",
-      "pluginGuide"
+      "pluginGuide",
+      "coreGuide"
     ],
     "API and CLI Guide": ["doc3"]
   }
