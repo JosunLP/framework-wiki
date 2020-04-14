@@ -1,0 +1,7 @@
+{
+  "docs": {
+    "Introduction": ["doc1"],
+    "Documentation": ["doc2"],
+    "API and CLI Guide": ["doc3"]
+  }
+}
