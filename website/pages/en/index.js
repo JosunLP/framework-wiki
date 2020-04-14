@@ -105,7 +105,7 @@ class Index extends React.Component {
             content:
               'The WAPS framework is designed to accelerate the development of PHP backend applications.' +
                 ' It offers the possibility of additional, flexible frontend and, thanks to its modularity and its mod support,' +
-                ' offers the possibility to expand this with additional modules even after the development of a project',
+                ' offers the possibility to expand this with additional modules even after the development of a project.',
             image: `${baseUrl}img/waps.png`,
             imageAlign: 'right',
             title: 'Description',
@@ -121,14 +121,14 @@ class Index extends React.Component {
             content: 'Since the framework was designed modularly, ' +
                 'an expansion using mods is quickly implemented. ' +
                 'Framework components can also be quickly and easily adapted and expanded',
-            image: `${baseUrl}img/undraw_react.svg`,
+            image: `${baseUrl}img/flex.svg`,
             imageAlign: 'top',
             title: 'Flexibility',
           },
           {
             content: 'With its three standardized interfaces for CLI,' +
                 ' API and frontend, the framework is able to cover a wide range of application types.',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
+            image: `${baseUrl}img/vers.svg`,
             imageAlign: 'top',
             title: 'Versatility',
           },

@@ -37,7 +37,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'doc1', label: 'Docs'},
-    {doc: 'doc3', label: 'API'},
+    {doc: 'apiRef', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
   ],
@@ -87,8 +87,6 @@ const siteConfig = {
   cleanUrl: true,
 
   // Open Graph and Twitter card images.
-  // ogImage: 'img/undraw_online.svg',
-  // twitterImage: 'img/undraw_tweetstorm.svg',
   twitterUsername: 'JolunJonas',
 
   // For sites with a sizable amount of content, set collapsible to true.

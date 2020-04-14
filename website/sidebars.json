@@ -1,7 +1,16 @@
 {
   "docs": {
-    "Introduction": ["doc1"],
-    "Documentation": ["doc2"],
+    "Introduction": [
+      "doc1",
+      "projectSetup"
+    ],
+    "Documentation": [
+      "doc2",
+      "configGuide",
+      "classGuide",
+      "pageGuide",
+      "pluginGuide"
+    ],
     "API and CLI Guide": ["doc3"]
   }
 }

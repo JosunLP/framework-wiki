@@ -4,5 +4,6 @@ title: Guides
 sidebar_label: Guides
 ---
 
-This is a link to [another document.](doc3.md)  
-This is a link to an [external page.](http://www.example.com)
+## Overview
+
+In this campaign, we focus on the individual areas of the framework and deal with functions and components.
