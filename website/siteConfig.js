@@ -22,7 +22,9 @@ const users = [
 
 const siteConfig = {
   title: 'WAPS Framework', // Title for your website.
-  tagline: 'A PHP web app framework. It\'s designed to make small future projects faster and easier. This entire framework has emerged as a learning project and is being continuously developed.\n' +
+  tagline: 'A PHP web app framework. It\'s designed to make small future projects faster and easier.' +
+      ' The focus is on PHP backend systems and thanks to its modularity it supports a wide range of projects.' +
+      ' This entire framework has emerged as a learning project and is being developed continuously.\n' +
       '\n',
   url: 'https://waps-framework.info/', // Your website URL
   baseUrl: '/', // Base URL for your project */

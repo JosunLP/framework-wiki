@@ -10,8 +10,15 @@
       "classGuide",
       "pageGuide",
       "pluginGuide",
-      "coreGuide"
+      "coreGuide",
+      "srcContentGuide",
+      "objectGuide",
+      "staticClassOverview"
     ],
-    "API and CLI Guide": ["doc3"]
+    "API and CLI Guide": [
+      "doc3",
+      "apiRef",
+      "cliRef"
+    ]
   }
 }

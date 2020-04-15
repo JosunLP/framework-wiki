@@ -29,3 +29,6 @@ The APIs that are loaded dynamically are stored in the API core. APIs are define
 ## CLI Core
 
 The CLIs that are loaded dynamically are stored in the CLI Core. CLIs are defined by the scheme `cliName.CLI.php`.
+
+
+You can find more information in the [API & CLI Guide](apiRef.md).
