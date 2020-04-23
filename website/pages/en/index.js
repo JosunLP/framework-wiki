@@ -7,10 +7,10 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
-  render() {
-    const {siteConfig, language = ''} = this.props;
-    const {baseUrl, docsUrl} = siteConfig;
-    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+        render() {
+                const { siteConfig, language = '' } = this.props;
+                const { baseUrl, docsUrl } = siteConfig;
+                const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
@@ -87,7 +87,12 @@ class Index extends React.Component {
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
         <h2>Feature Callout</h2>
-        <MarkdownBlock>These are features of this project</MarkdownBlock>
+        <div id="features">
+          <h3>Modularity</h3>
+          <span>The framework can be modified extremely quickly to meet the requirements of many projects.</span>
+          <h3>Flexibility</h3>
+          <span>Because of the possibility to use third party plugins and the three native interfaces, the framework could be used for a large span of projects.</span>
+        </div>
       </div>
     );
 

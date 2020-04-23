@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>WAPS Framework Blog</title>
+        <link>https://waps-framework.info//blog</link>
+        <description>The best place to stay up-to-date with the latest WAPS Framework news and events.</description>
+        <lastBuildDate>Tue, 14 Apr 2020 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>WAPS Framework Blog</title>
+            <url>https://waps-framework.info//img/waps-white.png</url>
+            <link>https://waps-framework.info//blog</link>
+        </image>
+        <copyright>Copyright © 2020 WAPS Framework Team</copyright>
+        <item>
+            <title><![CDATA[New Version 1.5.2]]></title>
+            <link>https://waps-framework.info//blog/2020/04/14/new-version-1.5.2.html</link>
+            <guid>https://waps-framework.info//blog/2020/04/14/new-version-1.5.2.html</guid>
+            <pubDate>Tue, 14 Apr 2020 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>After a few bugfixes in the mobile display of the website, I am happy to present version 1.5.2</p> ]]></description>
+        </item>
+    </channel>
+</rss>

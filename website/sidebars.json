@@ -1,24 +1,24 @@
 {
-  "docs": {
-    "Introduction": [
-      "doc1",
-      "projectSetup"
-    ],
-    "Documentation": [
-      "doc2",
-      "configGuide",
-      "classGuide",
-      "pageGuide",
-      "pluginGuide",
-      "coreGuide",
-      "srcContentGuide",
-      "objectGuide",
-      "staticClassOverview"
-    ],
-    "API and CLI Guide": [
-      "doc3",
-      "apiRef",
-      "cliRef"
-    ]
-  }
+    "docs": {
+        "Introduction": [
+            "doc1",
+            "projectSetup"
+        ],
+        "Documentation": [
+            "doc2",
+            "configGuide",
+            "classGuide",
+            "pageGuide",
+            "pluginGuide",
+            "coreGuide",
+            "srcContentGuide",
+            "objectGuide",
+            "staticClassOverview"
+        ],
+        "API and CLI Guide": [
+            "doc3",
+            "apiRef",
+            "cliRef"
+        ]
+    }
 }

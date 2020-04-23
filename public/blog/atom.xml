@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://waps-framework.info//blog</id>
+    <title>WAPS Framework Blog</title>
+    <updated>2020-04-14T06:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://waps-framework.info//blog"/>
+    <subtitle>The best place to stay up-to-date with the latest WAPS Framework news and events.</subtitle>
+    <logo>https://waps-framework.info//img/waps-white.png</logo>
+    <rights>Copyright © 2020 WAPS Framework Team</rights>
+    <entry>
+        <title type="html"><![CDATA[New Version 1.5.2]]></title>
+        <id>https://waps-framework.info//blog/2020/04/14/new-version-1.5.2.html</id>
+        <link href="https://waps-framework.info//blog/2020/04/14/new-version-1.5.2.html"/>
+        <updated>2020-04-14T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>After a few bugfixes in the mobile display of the website, I am happy to present version 1.5.2</p> ]]></summary>
+        <author>
+            <name>Jonas Pfalzgraf</name>
+            <email/>
+            <uri>http://twitter.com/jolunjonas</uri>
+        </author>
+    </entry>
+</feed>

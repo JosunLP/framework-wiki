@@ -1,0 +1,141 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Config Guide · WAPS Framework</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Introduction"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Config Guide · WAPS Framework"/><meta property="og:type" content="website"/><meta property="og:url" content="https://waps-framework.info//"/><meta property="og:description" content="## Introduction"/><meta name="twitter:card" content="summary"/><link rel="shortcut icon" href="/img/fav.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dark.min.css"/><link rel="alternate" type="application/atom+xml" href="https://waps-framework.info/blog/atom.xml" title="WAPS Framework Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://waps-framework.info/blog/feed.xml" title="WAPS Framework Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/waps-white.png" alt="WAPS Framework"/><h2 class="headerTitleWithLogo">WAPS Framework</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class="siteNavGroupActive"><a href="/docs/doc1" target="_self">Docs</a></li><li class="siteNavGroupActive"><a href="/docs/apiRef" target="_self">API</a></li><li class=""><a href="/help" target="_self">Help</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Documentation</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc1">Getting started</a></li><li class="navListItem"><a class="navItem" href="/docs/projectSetup">Project setup</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Documentation</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc2">Guides</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/docs/configGuide">Config Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/classGuide">Class Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/pageGuide">Page Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/pluginGuide">Plugin Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/coreGuide">Framework Core Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/srcContentGuide">Source &amp; Content Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/objectGuide">Object Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/staticClassOverview">Static class Guide</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">API and CLI Guide</h3><ul class=""><li class="navListItem"><a class="navItem" href="/docs/doc3">API &amp; CLI Guide</a></li><li class="navListItem"><a class="navItem" href="/docs/apiRef">API References</a></li><li class="navListItem"><a class="navItem" href="/docs/cliRef">CLI References</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Config Guide</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="introduction"></a><a href="#introduction" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Introduction</h2>
+<p>The config system of the framework is based on the simple strategy,
+that PHP uppercase constants are generated from the individual values.
+For this reason, care must be taken in the notation that words are separated by underscores.</p>
+<h2><a class="anchor" aria-hidden="true" id="config-file-head"></a><a href="#config-file-head" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Config File Head</h2>
+<p>The config file head is mainly used to define the project information.
+Here it is defined that it is a config file, the version of the app and the name of the app.
+It makes sense to use the repository name. Within the area <code>framework_info:</code> are the
+Information about the framework, including the current version.</p>
+<pre><code class="hljs">    &quot;head&quot;: {
+        &quot;title&quot;: &quot;configFile&quot;,
+        &quot;version&quot;: &quot;1.0.0&quot;,
+        &quot;app_name&quot;: &quot;Example Web App&quot;,
+        &quot;framework_info&quot;: {
+          &quot;framework_name&quot;: &quot;WAPS-Framework&quot;,
+          &quot;framework_version&quot;: &quot;1.5.2&quot;,
+          &quot;framework_repository&quot;: &quot;https://gitlab.com/webapp-php-sample/framework&quot;
+        }
+      }
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="meta-data"></a><a href="#meta-data" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Meta Data</h2>
+<p>In the Meta Data area, the information that is required for the Head page and important basic functions is defined.
+Here you will find, among other things, the definition of the domain, the charset and the author.</p>
+<pre><code class="hljs">    &quot;metaData&quot;: {
+        &quot;charset&quot;: &quot;utf8&quot;,
+        &quot;language&quot;: &quot;de_DE&quot;,
+        &quot;description&quot;: &quot;Example Web App&quot;,
+        &quot;keywords&quot;: &quot;PHP,HTMl,XML,JavaScript,CSS,APP&quot;,
+        &quot;author&quot;: &quot;Max Mustermann&quot;,
+        &quot;page_title&quot;: &quot;Web Application PHP&quot;,
+        &quot;copyright&quot;: &quot;WAPS-Team&quot;,
+        &quot;fav_icon&quot;: &quot;/content/img/fav.ico&quot;,
+        &quot;logo&quot;: &quot;/content/img/fav.svg&quot;,
+        &quot;domain&quot;: &quot;localhost&quot;
+      }
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="database-connection"></a><a href="#database-connection" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Database connection</h2>
+<p>In this section the database connection is defined.
+You should always set up a database user specially set up for the app who only has the required rights.</p>
+<pre><code class="hljs">    &quot;database&quot;: {
+        &quot;mysql_host&quot;: &quot;localhost:3306&quot;,
+        &quot;mysql_database&quot;: &quot;webapp_php_sample&quot;,
+        &quot;mysql_user&quot;: &quot;root&quot;,
+        &quot;mysql_keyword&quot;: &quot;&quot;,
+        &quot;database_table_list&quot;: [
+          &quot;iplogg&quot;,
+          &quot;usr&quot;,
+          &quot;passwd&quot;
+        ]
+      }
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="mail-unit-config"></a><a href="#mail-unit-config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Mail Unit config</h2>
+<p>Here the email prefixes are defined which are required for the different mail templates.</p>
+<pre><code class="hljs">    &quot;mailConfig&quot;: {
+        &quot;infoMail&quot;: &quot;info&quot;,
+        &quot;autoMail&quot;: &quot;auto&quot;,
+        &quot;supportMail&quot;: &quot;support&quot;
+      }
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="default-value-config"></a><a href="#default-value-config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Default value config</h2>
+<p>In this area, default values for testing sections are defined.</p>
+<pre><code class="hljs">    &quot;defaultConfig&quot;: {
+        &quot;default_string&quot;: &quot;DEFAULT&quot;,
+        &quot;default_int&quot;: 42,
+        &quot;default_bool&quot;: true,
+        &quot;default_array&quot;: [
+          &quot;1&quot;,
+          2,
+          true
+        ]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="default-file-filter"></a><a href="#default-file-filter" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Default file filter</h2>
+<p>Here the default file filter is defined, which is used when scanning folders</p>
+<pre><code class="hljs">    &quot;default_file_filter&quot;: [
+          &quot;.&quot;,
+          &quot;..&quot;,
+          &quot;.gitkeep&quot;
+        ]
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="migration-config"></a><a href="#migration-config" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Migration config</h2>
+<p>Here is the config for the CLI migration module</p>
+<pre><code class="hljs">    &quot;migrationConfig&quot;: {
+        &quot;migration_path&quot;: &quot;./core/database/migrations/&quot;
+      }</code></pre>
+</span></div></article></div><div class="docLastUpdate"><em>Last updated on 2020-4-14 by JosunLP</em></div><div class="docs-prevnext"><a class="docs-prev button" href="/docs/doc2"><span class="arrow-prev">← </span><span>Guides</span></a><a class="docs-next button" href="/docs/classGuide"><span>Class Guide</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#introduction">Introduction</a></li><li><a href="#config-file-head">Config File Head</a></li><li><a href="#meta-data">Meta Data</a></li><li><a href="#database-connection">Database connection</a></li><li><a href="#mail-unit-config">Mail Unit config</a></li><li><a href="#default-value-config">Default value config</a></li><li><a href="#default-file-filter">Default file filter</a></li><li><a href="#migration-config">Migration config</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/fav.png" alt="WAPS Framework" width="50" height="50"/></a><div><h5>Docs</h5><a href="/docs/en/doc1.html">Getting Started</a><a href="/docs/en/doc2.html">Guides</a><a href="/docs/en/doc3.html">API Reference</a></div><div><h5>More</h5><a href="/blog">Blog</a><a href="https://gitlab.com/webapp-php-sample/framework">GitLab</a><div class="social"><a href="https://twitter.com/JolunJonas" class="twitter-follow-button">Follow @JolunJonas</a></div></div></section><section class="copyright">Copyright © 2020 WAPS Framework Team</section></footer></div><script>window.twttr=(function(d,s, id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return t;js=d.createElement(s);js.id=id;js.src='https://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js, fjs);t._e = [];t.ready = function(f) {t._e.push(f);};return t;}(document, 'script', 'twitter-wjs'));</script></body></html>
