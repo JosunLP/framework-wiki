@@ -18,7 +18,7 @@ class Users extends React.Component {
       return null;
     }
 
-    const editUrl = `${siteConfig.repoUrl}`;
+    const editUrl = `https://gitlab.com/webapp-php-sample/gitlab-pages/framework-wiki/edit/master/website/siteConfig.js`;
     const showcase = siteConfig.users.map(user => (
       <a href={user.infoLink} key={user.infoLink}>
         <img src={user.image} alt={user.caption} title={user.caption} />
@@ -35,7 +35,7 @@ class Users extends React.Component {
             <div className="logos">{showcase}</div>
             <p>Are you using this project?</p>
             <a href={editUrl} className="button">
-              Ask about adding your company
+              Add your company to the list!
             </a>
           </div>
         </Container>
