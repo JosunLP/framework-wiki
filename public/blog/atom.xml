@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waps-framework.info//blog</id>
     <title>WAPS Framework Blog</title>
-    <updated>2020-04-23T06:00:00.000Z</updated>
+    <updated>2020-04-25T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waps-framework.info//blog"/>
     <subtitle>The best place to stay up-to-date with the latest WAPS Framework news and events.</subtitle>
@@ -10,9 +10,9 @@
     <rights>Copyright © 2020 WAPS Framework Team</rights>
     <entry>
         <title type="html"><![CDATA[Release of the Framework Wiki 🥳 🎉 🎉]]></title>
-        <id>https://waps-framework.info//blog/2020/04/23/release-of-the-wiki.html</id>
-        <link href="https://waps-framework.info//blog/2020/04/23/release-of-the-wiki.html"/>
-        <updated>2020-04-23T06:00:00.000Z</updated>
+        <id>https://waps-framework.info//blog/2020/04/25/release-of-the-wiki.html</id>
+        <link href="https://waps-framework.info//blog/2020/04/25/release-of-the-wiki.html"/>
+        <updated>2020-04-25T06:00:00.000Z</updated>
         <summary type="html"><![CDATA[<p>After over a year of development and killing time, I am FINALLY pleased to present the WAPS Wiki to you. Here I try to give you an insight into the function and structure of the WAPS framework, to provide help with the work with the framework and to ...</p>]]></summary>
         <author>
             <name>Jonas Pfalzgraf</name>

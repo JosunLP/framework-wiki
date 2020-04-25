@@ -4,7 +4,7 @@
         <title>WAPS Framework Blog</title>
         <link>https://waps-framework.info//blog</link>
         <description>The best place to stay up-to-date with the latest WAPS Framework news and events.</description>
-        <lastBuildDate>Thu, 23 Apr 2020 06:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 25 Apr 2020 06:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,9 +15,9 @@
         <copyright>Copyright © 2020 WAPS Framework Team</copyright>
         <item>
             <title><![CDATA[Release of the Framework Wiki 🥳 🎉 🎉]]></title>
-            <link>https://waps-framework.info//blog/2020/04/23/release-of-the-wiki.html</link>
-            <guid>https://waps-framework.info//blog/2020/04/23/release-of-the-wiki.html</guid>
-            <pubDate>Thu, 23 Apr 2020 06:00:00 GMT</pubDate>
+            <link>https://waps-framework.info//blog/2020/04/25/release-of-the-wiki.html</link>
+            <guid>https://waps-framework.info//blog/2020/04/25/release-of-the-wiki.html</guid>
+            <pubDate>Sat, 25 Apr 2020 06:00:00 GMT</pubDate>
             <description><![CDATA[<p>After over a year of development and killing time, I am FINALLY pleased to present the WAPS Wiki to you. Here I try to give you an insight into the function and structure of the WAPS framework, to provide help with the work with the framework and to ...</p>]]></description>
         </item>
     </channel>
