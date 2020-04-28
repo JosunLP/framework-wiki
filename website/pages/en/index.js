@@ -96,6 +96,23 @@ class Index extends React.Component {
       </div>
     );
 
+    const PublishButton = () => (
+      <div
+      className = "publishButton"
+      style={{textAlign: 'center'}}
+      >
+      <h1>Get it now!</h1>
+      < a href = "https://github.com/WebApp-PHP-Sample-Project/WepApp-PHP-Sample-Framework/archive/v1.5.3.zip" >
+      <button
+      className = "button"
+      >
+        Download v1.5.3
+      </button>
+      </a>
+        
+      </div>
+    );
+
     const Description = () => (
       <Block background="dark">
         {[
@@ -167,8 +184,9 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />
+          <Features />          
           <FeatureCallout />
+          <PublishButton />
           <Description />
           <Showcase />
         </div>
