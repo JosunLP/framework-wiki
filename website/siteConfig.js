@@ -100,7 +100,7 @@ const siteConfig = {
 
     // You may provide arbitrary config keys to be used as needed by your
     // template. For example, if you need your repo's URL...
-    repoUrl: 'https://gitlab.com/webapp-php-sample/framework',
+    repoUrl: 'https://gitlab.com/waps/framework',
 };
 
 module.exports = siteConfig;

@@ -102,7 +102,7 @@ class Index extends React.Component {
       style={{textAlign: 'center'}}
       >
       <h1>Get it now!</h1>
-      < a href = "https://github.com/WebApp-PHP-Sample-Project/WepApp-PHP-Sample-Framework/archive/v1.5.3.zip" >
+      < a href = "https://github.com/WAPS-Project/WAPS-Framework/archive/v1.5.3.zip" >
       <button
       className = "button"
       >
