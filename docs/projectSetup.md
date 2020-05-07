@@ -6,7 +6,7 @@ sidebar_label: Project setup
 
 ## Download latest copy
 A copy of the current version of the framework is 
-required for the project setup, which can be downloaded [here](https://gitlab.com/webapp-php-sample/framework).
+required for the project setup, which can be downloaded [here](https://gitlab.com/waps/framework).
 
 ## Workspace
 Next, all files from the download must be copied to the working directory. 
