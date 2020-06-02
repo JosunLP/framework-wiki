@@ -106,7 +106,7 @@ class Index extends React.Component {
       <button
       className = "button"
       >
-        Download v1.5.3
+        Download v1.5.4
       </button>
       </a>
         
