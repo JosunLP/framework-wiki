@@ -43,7 +43,7 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>You can always ask for help in the <a href='https://gitlab.com/webapp-php-sample' target='_blank'>project group</a></p>
+          <p>You can always ask for help in the <a href='https://gitlab.com/waps' target='_blank'>project group</a></p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>
