@@ -181,17 +181,10 @@ class Index extends React.Component {
     };
 
     return (
-      <div>       
-        <div className="DEPRECATION">
-          <p>The development of the WAPS framework has stopped, due to lack of time the software cannot be further developed.</p>
-        </div>
-        <HomeSplash siteConfig={siteConfig} language={language} />        
+      <div>
+        <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <Features />          
-          <FeatureCallout />
-          <PublishButton />
-          <Description />
-          <Showcase />
+          <script src="/js/deprecated.js"></script>
         </div>
       </div>
     );
@@ -199,3 +192,19 @@ class Index extends React.Component {
 }
 
 module.exports = Index;
+
+/*
+return (
+  <div>
+    <HomeSplash siteConfig={siteConfig} language={language} />
+    <div className="mainContainer">
+      <Features />
+      <FeatureCallout />
+      <PublishButton />
+      <Description />
+      <Showcase />
+      <script src="/js/deprecated.js"></script>
+    </div>
+  </div>
+);
+*/
