@@ -45,7 +45,7 @@
     z-index: 10000;
     color: white;
     background-color: #F56262;
-    pointer-events: none;
+    pointer-events: all;
     overflow: hidden;
 }
 
