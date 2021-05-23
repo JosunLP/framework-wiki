@@ -7,10 +7,10 @@ const Container = CompLibrary.Container;
 const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
-        render() {
-                const { siteConfig, language = '' } = this.props;
-                const { baseUrl, docsUrl } = siteConfig;
-                const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
+  render() {
+    const { siteConfig, language = '' } = this.props;
+    const { baseUrl, docsUrl } = siteConfig;
+    const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
     const langPart = `${language ? `${language}/` : ''}`;
     const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
 
@@ -52,7 +52,7 @@ class HomeSplash extends React.Component {
     );
 
     return (
-      <SplashContainer>        
+      <SplashContainer>
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
@@ -66,8 +66,8 @@ class HomeSplash extends React.Component {
 
 class Index extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
-    const {baseUrl} = siteConfig;
+    const { config: siteConfig, language = '' } = this.props;
+    const { baseUrl } = siteConfig;
 
     const Block = props => (
       <Container
@@ -85,7 +85,7 @@ class Index extends React.Component {
     const FeatureCallout = () => (
       <div
         className="productShowcaseSection paddingBottom"
-        style={{textAlign: 'center'}}>
+        style={{ textAlign: 'center' }}>
         <h2>Feature Callout</h2>
         <div id="features">
           <h3>Modularity</h3>
@@ -98,18 +98,18 @@ class Index extends React.Component {
 
     const PublishButton = () => (
       <div
-      className = "publishButton"
-      style={{textAlign: 'center'}}
+        className="publishButton"
+        style={{ textAlign: 'center' }}
       >
-      <h1>Get it now!</h1>
-      < a href = "https://github.com/WAPS-Project/WAPS-Framework/archive/v1.5.4.zip" >
-      <button
-      className = "button"
-      >
-        Download v1.5.4
-      </button>
-      </a>
-        
+        <h1>Get it now!</h1>
+        < a href="https://github.com/WAPS-Project/WAPS-Framework/archive/v1.5.5.zip" >
+          <button
+            className="button"
+          >
+            Download v1.5.5
+          </button>
+        </a>
+
       </div>
     );
 
@@ -119,8 +119,8 @@ class Index extends React.Component {
           {
             content:
               'The WAPS framework is designed to accelerate the development of PHP backend applications.' +
-                ' It offers the possibility of additional, flexible frontend and, thanks to its modularity and its mod support,' +
-                ' offers the possibility to expand this with additional modules even after the development of a project.',
+              ' It offers the possibility of additional, flexible frontend and, thanks to its modularity and its mod support,' +
+              ' offers the possibility to expand this with additional modules even after the development of a project.',
             image: `${baseUrl}img/waps.png`,
             imageAlign: 'right',
             title: 'Description',
@@ -134,15 +134,15 @@ class Index extends React.Component {
         {[
           {
             content: 'Since the framework was designed modularly, ' +
-                'an expansion using mods is quickly implemented. ' +
-                'Framework components can also be quickly and easily adapted and expanded.',
+              'an expansion using mods is quickly implemented. ' +
+              'Framework components can also be quickly and easily adapted and expanded.',
             image: `${baseUrl}img/flex.svg`,
             imageAlign: 'top',
             title: 'Flexibility',
           },
           {
             content: 'With its three standardized interfaces for CLI,' +
-                ' API and frontend, the framework is able to cover a wide range of application types.',
+              ' API and frontend, the framework is able to cover a wide range of application types.',
             image: `${baseUrl}img/vers.svg`,
             imageAlign: 'top',
             title: 'Versatility',
@@ -184,7 +184,11 @@ class Index extends React.Component {
       <div>
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
-          <script src="/js/deprecated.js"></script>
+          <Features />
+          <FeatureCallout />
+          <PublishButton />
+          <Description />
+          <Showcase />
         </div>
       </div>
     );
@@ -192,19 +196,3 @@ class Index extends React.Component {
 }
 
 module.exports = Index;
-
-/*
-return (
-  <div>
-    <HomeSplash siteConfig={siteConfig} language={language} />
-    <div className="mainContainer">
-      <Features />
-      <FeatureCallout />
-      <PublishButton />
-      <Description />
-      <Showcase />
-      <script src="/js/deprecated.js"></script>
-    </div>
-  </div>
-);
-*/
