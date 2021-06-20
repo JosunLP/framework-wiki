@@ -102,11 +102,11 @@ class Index extends React.Component {
         style={{ textAlign: 'center' }}
       >
         <h1>Get it now!</h1>
-        < a href="https://github.com/WAPS-Project/WAPS-Framework/archive/v1.5.7.zip" >
+        < a href="https://github.com/WAPS-Project/WAPS-Framework/archive/v1.5.8.zip" >
           <button
             className="button"
           >
-            Download v1.5.7
+            Download v1.5.8
           </button>
         </a>
 
