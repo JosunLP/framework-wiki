@@ -10,12 +10,19 @@
 
 // List of projects/orgs using your project for the users page.
 const users = [{
-    caption: 'JosunLP',
+    caption: 'Corsify-proxy',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/Logo-Jonas-min.png',
-    infoLink: 'https://gitlab.com/JosunLP',
+    image: 'https://raw.githubusercontent.com/JosunLP/Corsify-proxy/main/framework.src/content/img/fav.png',
+    infoLink: 'https://github.com/JosunLP/Corsify-proxy',
     pinned: true,
+},{
+  caption: 'JosunLP',
+  // You will need to prepend the image path with your baseUrl
+  // if it is not '/', like: '/test-site/img/image.jpg'.
+  image: '/img/Logo-Jonas-min.png',
+  infoLink: 'https://gitlab.com/JosunLP',
+  pinned: true,
 }, ];
 
 const siteConfig = {
