@@ -2,12 +2,23 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://waps-framework.info//blog</id>
     <title>WAPS Framework Blog</title>
-    <updated>2021-07-06T06:00:00.000Z</updated>
+    <updated>2021-09-22T06:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://waps-framework.info//blog"/>
     <subtitle>The best place to stay up-to-date with the latest WAPS Framework news and events.</subtitle>
     <logo>https://waps-framework.info//img/waps-white.png</logo>
     <rights>Copyright © 2021 WAPS Framework Team</rights>
+    <entry>
+        <title type="html"><![CDATA[Update to the Version 1.7.0]]></title>
+        <id>https://waps-framework.info//blog/2021/09/22/Update_1.7.0.html</id>
+        <link href="https://waps-framework.info//blog/2021/09/22/Update_1.7.0.html"/>
+        <updated>2021-09-22T06:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<h2><a class="anchor" aria-hidden="true" id="170"></a><a href="#170" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>1.7.0</h2> <h3><a class="anchor" aria-hidden="true" id="global-error-handling"></a><a href="#global-error-handling" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewbox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"/></svg></a>Global Error handling</h3> <p>The error handler class has been revised. Instances are now loaded that process global error events.</p> ]]></summary>
+        <author>
+            <name>Jonas Pfalzgraf</name>
+            <uri>http://twitter.com/jolunjonas</uri>
+        </author>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Update to the Version 1.6.1]]></title>
         <id>https://waps-framework.info//blog/2021/07/06/Update_1.6.1.html</id>
